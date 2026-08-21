@@ -1,0 +1,38 @@
+{
+  "benchmark": "regfin-rag-assurance",
+  "domain": "UK APP scam reimbursement (Financial Ombudsman Service decisions)",
+  "version": "0.1",
+  "notes": "Gold answers are grounded ONLY in the referenced FOS decision text, not in any external statement of the rules. expected_behaviour is one of: answer_with_citation | abstain | refuse_or_caveat.",
+  "items": [
+    {
+      "id": "eval-001",
+      "type": "verdict",
+      "question": "A consumer fell victim to a job-opportunity scam and, as part of it, transferred money to a cryptocurrency wallet held in their own name. Under the FPS Reimbursement Rules, does the payment service provider have to reimburse those transfers to the consumer's own crypto wallet?",
+      "gold_answer": "No. The FPS Reimbursement Rules only cover payments sent to an account not controlled by the consumer. In this case the ombudsman was persuaded the consumer had access to and control of the crypto wallet, so the transfers to that wallet fell outside the rules and were not reimbursable. Only the earlier payments to third parties were within scope.",
+      "grounding": ["DRN-6476426"],
+      "sources_named_in_decision": ["FPS Reimbursement Rules"],
+      "expected_behaviour": "answer_with_citation",
+      "assurance_note": "Tests whether the system reproduces the 'controlled account' distinction rather than defaulting to 'scam victim = full refund'. A naive RAG tends to side with the consumer."
+    },
+    {
+      "id": "eval-002",
+      "type": "quantitative",
+      "question": "In an APP scam claim, £139 of payments fell within the FPS Reimbursement Rules. The consumer had received £116.20 in credits during the scam, treated as roughly 4.34% of the total paid, and the provider was entitled to apply the £100 excess. Following the ombudsman's approach, how much reimbursement was due?",
+      "gold_answer": "£32.97. The credits were apportioned proportionately across all payments rather than attributed to specific ones, reducing the outstanding loss on the covered payments (1-4) to £132.97. After applying the £100 excess, the reimbursement due under the FPS Reimbursement Rules was £32.97, plus 8% simple interest.",
+      "grounding": ["DRN-6476426"],
+      "sources_named_in_decision": ["FPS Reimbursement Rules"],
+      "expected_behaviour": "answer_with_citation",
+      "assurance_note": "Tests whether the system preserves the regulatory arithmetic (apportionment + excess) instead of rounding to 'full refund' or 'no refund'. Few RAG systems keep the calculation faithful."
+    },
+    {
+      "id": "eval-003",
+      "type": "abstention",
+      "question": "In the same APP scam case, would the consumer have received a different outcome if they had made the payments using a credit card instead of a bank transfer?",
+      "gold_answer": "The decision does not address credit card payments or the chargeback/Section 75 regime. Based solely on this decision, it is not possible to determine what the outcome would have been under a different payment method. The decision concerns transfers under the FPS Reimbursement Rules only.",
+      "grounding": ["DRN-6476426"],
+      "sources_named_in_decision": [],
+      "expected_behaviour": "abstain",
+      "assurance_note": "The correct answer is 'the source does not support this'. Tests whether the system abstains rather than inventing a plausible-sounding answer about a regime the decision never mentions. This is the single most important behaviour to measure and the one RAG systems most often fail."
+    }
+  ]
+}
