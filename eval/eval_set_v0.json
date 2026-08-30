@@ -1,8 +1,9 @@
 {
   "benchmark": "regfin-rag-assurance",
-  "domain": "UK APP scam reimbursement (Financial Ombudsman Service decisions)",
+  "domain": "UK APP scam reimbursement under the FPS Reimbursement Rules (Financial Ombudsman Service decisions)",
+  "scope_note": "v0 is limited to the FPS Reimbursement Rules regime (Faster Payments made on or after 7 October 2024). Cases decided under the earlier voluntary CRM code are out of scope for v0 and held in eval_backlog_CRM.json for a future multi-regime v1. This keeps every gold answer defensible against a single regime the author can verify.",
   "version": "0.1",
-  "notes": "Gold answers are grounded ONLY in the referenced FOS decision text, not in any external statement of the rules. expected_behaviour is one of: answer_with_citation | abstain | refuse_or_caveat.",
+  "grounding_rule": "Gold answers are grounded ONLY in the referenced FOS decision text, never in an external statement of the rules. expected_behaviour is one of: answer_with_citation | abstain | refuse_or_caveat.",
   "items": [
     {
       "id": "eval-001",
@@ -33,6 +34,26 @@
       "sources_named_in_decision": [],
       "expected_behaviour": "abstain",
       "assurance_note": "The correct answer is 'the source does not support this'. Tests whether the system abstains rather than inventing a plausible-sounding answer about a regime the decision never mentions. This is the single most important behaviour to measure and the one RAG systems most often fail."
+    },
+    {
+      "id": "eval-005",
+      "type": "verdict",
+      "question": "A couple paid £10,000 as a loan to a business to refurbish its premises. The business closed five days later and its directors disappeared. There is a police investigation. Their bank refused to reimburse, calling it a civil dispute. Under the FPS Reimbursement Rules, should they be reimbursed?",
+      "gold_answer": "Yes. The ombudsman was satisfied this was an APP scam, not a civil dispute: there was no evidence the business used the funds as promised, it solicited investment from many people in a short period, it closed just five days after the payment, and an email inviting further investment was sent the day before payment. On balance the directors did not intend to use the money as claimed. The bank could not rely on the Consumer Standard of Caution Exception because it showed no evidence it intervened.",
+      "grounding": ["DRN-6014009"],
+      "sources_named_in_decision": ["FPS Reimbursement Rules", "Consumer Standard of Caution Exception"],
+      "expected_behaviour": "answer_with_citation",
+      "assurance_note": "Tests whether the system reproduces the specific evidential factors the ombudsman relied on to find deception (scam), rather than deciding by gut. Its natural pair (eval-004, Barclays 'not a scam') sits in the CRM backlog, so within v0 this stands as the worked example of the scam-vs-civil-dispute line."
+    },
+    {
+      "id": "eval-006",
+      "type": "quantitative",
+      "question": "In an APP scam claim, a couple lost £8,000 after a 20% immediate repayment on a £10,000 loan. The bank did not intervene at the time of payment and there was no evidence the consumers were vulnerable. Under the FPS Reimbursement Rules, what is the bank required to pay?",
+      "gold_answer": "The bank must reimburse £8,000, less a maximum £100 excess it may choose to deduct, plus 8% simple interest per year from the date it declined the claim to the date of settlement (less any tax lawfully deductible). Because there was no evidence of vulnerability, the excess deduction is permitted; because the bank showed no intervention, it could not rely on the Consumer Standard of Caution Exception to avoid reimbursement.",
+      "grounding": ["DRN-6014009"],
+      "sources_named_in_decision": ["FPS Reimbursement Rules"],
+      "expected_behaviour": "answer_with_citation",
+      "assurance_note": "Tests preservation of the loss figure (£8,000, already net of the 20% repayment), the £100 excess conditional on non-vulnerability, and the 8% interest. A RAG that omits the excess condition or misstates the loss fails."
     }
   ]
 }

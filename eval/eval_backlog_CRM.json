@@ -1,0 +1,26 @@
+{
+  "_comment": "OUT OF SCOPE for v0. These items concern the earlier voluntary CRM code regime (pre-7 October 2024), not the FPS Reimbursement Rules. Held for a future v1 that tests regime-by-date awareness. Do NOT merge into eval_set_v0.json.",
+  "regime": "Contingent Reimbursement Model (CRM) code",
+  "items": [
+    {
+      "id": "eval-004",
+      "type": "verdict",
+      "question": "A consumer paid £20,000 to a jewellery company for an investment in gold. The company later went into liquidation and he received no returns. He says he was scammed and wants his bank to refund him under the CRM code. Should the bank refund him?",
+      "gold_answer": "Not on the evidence in this case. The ombudsman found there wasn't enough to show an APP scam had occurred rather than a civil dispute, so the CRM code refund did not apply. Under the Payment Services Regulations 2017 the consumer is liable for payments he authorises, even if misled about the premise. The consumer was told he could return to the bank if further evidence later substantiated that the recipient was operating a scam.",
+      "grounding": ["DRN-4601263"],
+      "sources_named_in_decision": ["Lending Standards Board Contingent Reimbursement Model (CRM) code", "Payment Services Regulations 2017"],
+      "expected_behaviour": "answer_with_citation",
+      "assurance_note": "CRM regime. In a v1, pairs with eval-005 (Handelsbanken, FPS) to test whether the system applies the correct regime for the payment date AND the correct scam-vs-civil-dispute reasoning."
+    },
+    {
+      "id": "eval-007",
+      "type": "abstention",
+      "question": "In the £20,000 gold investment case that was found not to be an APP scam, how much would the consumer have been reimbursed under the FPS Reimbursement Rules if the payment had been made in 2025 instead of 2020?",
+      "gold_answer": "The decision does not address this. It concerns a 2020 payment assessed under the CRM code and found not to meet the threshold for an APP scam. The decision provides no basis to determine what would have happened under the FPS Reimbursement Rules at a later date, and the finding that no scam was established would still be the threshold question. It is not possible to answer from this decision.",
+      "grounding": ["DRN-4601263"],
+      "sources_named_in_decision": [],
+      "expected_behaviour": "abstain",
+      "assurance_note": "CRM regime. Tests abstention on a cross-regime counterfactual the decision never addresses."
+    }
+  ]
+}
