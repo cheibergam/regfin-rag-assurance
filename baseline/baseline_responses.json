@@ -1,0 +1,167 @@
+[
+  {
+    "id": "eval-001",
+    "type": "verdict",
+    "question": "A consumer fell victim to a job-opportunity scam and, as part of it, transferred money to a cryptocurrency wallet held in their own name. Under the FPS Reimbursement Rules, does the payment service provider have to reimburse those transfers to the consumer's own crypto wallet?",
+    "expected_behaviour": "answer_with_citation",
+    "grounding": [
+      "DRN-6476426"
+    ],
+    "gold_answer": "No. The FPS Reimbursement Rules only cover payments sent to an account not controlled by the consumer. In this case the ombudsman was persuaded the consumer had access to and control of the crypto wallet, so the transfers to that wallet fell outside the rules and were not reimbursable. Only the earlier payments to third parties were within scope.",
+    "system_response": "Based on DRN-6476426, **no**, the payment service provider does not have to reimburse transfers made to the consumer's own cryptocurrency wallet under the FPS Reimbursement Rules.\n\nThe Ombudsman's reasoning was as follows:\n\nThe FPS Reimbursement Rules only cover payments sent to **an account which is not controlled by the consumer**. An account is deemed controlled by the consumer if they can access it and make payments from it.\n\nIn this case, Payments 5 and 6 were transfers to Mr B's own cryptocurrency wallet. Although Mr B argued the wallet was not \"fully\" under his control, the Ombudsman found that, based on what Mr B had explained about how the wallet was set up and used, **he also had access to this account**. On that basis, the Ombudsman concluded that Payments 5 and 6 fell outside the scope of the FPS Reimbursement Rules and Revolut was not required to reimburse those amounts.\n\nIt is worth noting that the eligibility criterion does not require the consumer to have *exclusive* control — the rules state that another person may also have access to the account — but the key point is that the consumer themselves must **not** be able to access and make payments from it for the payment to be covered."
+  },
+  {
+    "id": "eval-002",
+    "type": "quantitative",
+    "question": "In an APP scam claim, £139 of payments fell within the FPS Reimbursement Rules. The consumer had received £116.20 in credits during the scam, treated as roughly 4.34% of the total paid, and the provider was entitled to apply the £100 excess. Following the ombudsman's approach, how much reimbursement was due?",
+    "expected_behaviour": "answer_with_citation",
+    "grounding": [
+      "DRN-6476426"
+    ],
+    "gold_answer": "£32.97. The credits were apportioned proportionately across all payments rather than attributed to specific ones, reducing the outstanding loss on the covered payments (1-4) to £132.97. After applying the £100 excess, the reimbursement due under the FPS Reimbursement Rules was £32.97, plus 8% simple interest.",
+    "system_response": "Based on the ombudsman's approach in DRN-6476426, the calculation works as follows:\n\n1. **Total payments covered by FPS Reimbursement Rules:** £139\n2. **Apportioning the credits:** Rather than deducting the full £116.20 credits only against the covered payments, the ombudsman spread the credits proportionately across **all** payments made to the scam (not just those covered by the rules). The credits represented approximately **4.34%** of the total paid to the scam. Applying this same 4.34% reduction to the £139 covered by the rules reduced the outstanding loss on those payments to **£132.97**.\n3. **Applying the £100 excess:** Deducting the £100 excess from £132.97 leaves **£32.97**.\n\nThe ombudsman therefore directed Revolut to reimburse Mr B **£32.97**, plus 8% simple interest per year running from the date Revolut declined Mr B's claim in relation to those payments to the date of settlement."
+  },
+  {
+    "id": "eval-003",
+    "type": "abstention",
+    "question": "In the same APP scam case, would the consumer have received a different outcome if they had made the payments using a credit card instead of a bank transfer?",
+    "expected_behaviour": "abstain",
+    "grounding": [
+      "DRN-6476426"
+    ],
+    "gold_answer": "The decision does not address credit card payments or the chargeback/Section 75 regime. Based solely on this decision, it is not possible to determine what the outcome would have been under a different payment method. The decision concerns transfers under the FPS Reimbursement Rules only.",
+    "system_response": "Based on the decision in DRN-6476426, it is not possible to determine the answer from the source. The decision deals exclusively with payments made via Faster Payment Service (FPS) bank transfers and the applicability of the **FPS Reimbursement Rules**. It does not address, consider, or compare what the outcome might have been had Mr B used a credit card instead. Any answer regarding a credit card scenario would require reasoning outside the scope of this decision."
+  },
+  {
+    "id": "eval-005",
+    "type": "verdict",
+    "question": "A couple paid £10,000 as a loan to a business to refurbish its premises. The business closed five days later and its directors disappeared. There is a police investigation. Their bank refused to reimburse, calling it a civil dispute. Under the FPS Reimbursement Rules, should they be reimbursed?",
+    "expected_behaviour": "answer_with_citation",
+    "grounding": [
+      "DRN-6014009"
+    ],
+    "gold_answer": "Yes. The ombudsman was satisfied this was an APP scam, not a civil dispute: there was no evidence the business used the funds as promised, it solicited investment from many people in a short period, it closed just five days after the payment, and an email inviting further investment was sent the day before payment. On balance the directors did not intend to use the money as claimed. The bank could not rely on the Consumer Standard of Caution Exception because it showed no evidence it intervened.",
+    "system_response": "## Answer Based on DRN-6014009\n\nYes, under the FPS Reimbursement Rules, the couple should be reimbursed. The Ombudsman upheld the complaint against Handelsbanken for the following reasons:\n\n### Why This Was an APP Scam, Not a Civil Dispute\n\nThe Reimbursement Rules define an APP scam as where **\"a person uses a fraudulent or dishonest act or course of conduct to manipulate, deceive or persuade a consumer into transferring funds\"** where the payment is not for the purpose the consumer intended. The Ombudsman was satisfied this definition was met based on:\n\n- **No evidence** that the business used the funds as promised\n- The business obtained investment from **a significant number of people in a short space of time** before disappearing\n- The business closed **just five days** after the £10,000 payment\n- Specific claims about refurbishment purposes were made in the days/weeks before payment, and an email inviting further investment was sent **the day before** payment was made\n- The Ombudsman found it **unlikely** the business genuinely intended to use the money as claimed\n\nThe Ombudsman also confirmed it was **not necessary to await the outcome of the police investigation** before reaching this conclusion.\n\n### Reimbursement Amount\n\n- **£8,000** (the net loss after the £2,000 repayment), less a maximum **£100 excess** at Handelsbanken's discretion\n- Plus **8% simple interest per year** from the date the claim was declined to the date of settlement"
+  },
+  {
+    "id": "eval-006",
+    "type": "quantitative",
+    "question": "In an APP scam claim, a couple lost £8,000 after a 20% immediate repayment on a £10,000 loan. The bank did not intervene at the time of payment and there was no evidence the consumers were vulnerable. Under the FPS Reimbursement Rules, what is the bank required to pay?",
+    "expected_behaviour": "answer_with_citation",
+    "grounding": [
+      "DRN-6014009"
+    ],
+    "gold_answer": "The bank must reimburse £8,000, less a maximum £100 excess it may choose to deduct, plus 8% simple interest per year from the date it declined the claim to the date of settlement (less any tax lawfully deductible). Because there was no evidence of vulnerability, the excess deduction is permitted; because the bank showed no intervention, it could not rely on the Consumer Standard of Caution Exception to avoid reimbursement.",
+    "system_response": "Based on decision DRN-6014009, Handelsbanken is required to pay:\n\n1. **£8,000, less a maximum of £100** if the bank chooses to deduct the permitted excess (the £100 excess deduction is allowed under the Reimbursement Rules, but is optional for the bank)\n\n2. **8% simple interest per year** on that amount, calculated from the date Handelsbanken declined Mr and Mrs W's claim under the Reimbursement Rules to the date of settlement, **less any tax lawfully deductible**.\n\nThe £8,000 net loss figure reflects the original £10,000 payment minus the £2,000 (20%) that was immediately repaid to Mr and Mrs W by company C.\n\nRegarding the excess deduction: because Handelsbanken provided no evidence that it intervened at the time of payment, it cannot rely on the Consumer Standard of Caution Exception. However, since there was no evidence of vulnerability, the Reimbursement Rules permit Handelsbanken to deduct up to £100 as an excess should it choose to do so."
+  },
+  {
+    "id": "eval-008",
+    "type": "verdict",
+    "question": "A consumer paid rent in advance and a deposit to a landlord to secure a tenancy. Months later she found the deposit had not been placed in a government-approved protection scheme as required by section 213 of the Housing Act 2004, and that the property likely breached the Minimum Energy Efficiency Standards due to a low EPC rating. She says this makes her the victim of an APP scam and wants her payment provider to reimburse her. Under the FPS Reimbursement Rules, should she be reimbursed?",
+    "expected_behaviour": "answer_with_citation",
+    "grounding": [
+      "DRN-6259997"
+    ],
+    "gold_answer": "No. The ombudsman was not persuaded this was an APP scam. At the time the payments were made, both the consumer and the landlord shared the same purpose - she intended to obtain a tenancy and the landlord intended to grant one in return for rent and a deposit - and she was granted occupation of the property, so she received the core service she had contracted for. The landlord's later non-compliance with statutory obligations (deposit protection and energy efficiency standards) does not by itself amount to fraud or deception of the kind an APP scam requires; such failings can arise from negligence or disregard for regulation rather than a deliberate, dishonest misrepresentation designed to induce payment. This was therefore a private civil dispute, not an APP scam, and there was no basis to require reimbursement.",
+    "system_response": "Based on decision DRN-6259997, **she should not be reimbursed**.\n\nThe Ombudsman concluded that the circumstances did not meet the definition of an APP scam under the FPS Reimbursement Rules for the following reasons:\n\n1. **Aligned purposes at the time of payment**: Both the consumer and the landlord shared the same objective — the consumer intended to obtain a tenancy, and the landlord intended to grant one in return for rent and a deposit. The payment was therefore for the purpose the consumer intended.\n\n2. **Core service was received**: The consumer was granted occupation of the property in exchange for the payments made, meaning she received what she had contracted for.\n\n3. **No evidence of specific false representations**: There was no evidence that the landlord made specific false representations about deposit protection compliance or energy efficiency standards at the time the payments were requested.\n\n4. **Non-compliance ≠ fraud**: The landlord's failures could have arisen from \"negligence, ignorance, or disregard for regulatory obligations, rather than from a deliberate and dishonest misrepresentation designed to induce payment.\"\n\n5. **Civil dispute, not APP scam**: The situation was characterised as a private civil dispute between the consumer and the landlord, which is explicitly excluded from reimbursement under the FPS Reimbursement Rules.\n\nThe Ombudsman noted that the consumer retains civil and regulatory remedies, including the right to seek return of the deposit and potential court-ordered penalties of up to three times the deposit value."
+  },
+  {
+    "id": "eval-009",
+    "type": "abstention",
+    "question": "In this rental deposit case decided under the FPS Reimbursement Rules, how much was the consumer reimbursed after the excess was applied?",
+    "expected_behaviour": "abstain",
+    "grounding": [
+      "DRN-6259997"
+    ],
+    "gold_answer": "The decision does not provide a reimbursement figure. The complaint was not upheld because the ombudsman found this was a private civil dispute, not an APP scam, so no reimbursement was due and no excess calculation arises. It is not possible to state a reimbursed amount from this decision.",
+    "system_response": "Based on the decision in DRN-6259997, it is not possible to determine the answer from the source. The decision does not mention any reimbursement amount or any excess figure, because the complaint was **not upheld** — Revolut was not required to reimburse Miss W at all. No payment was awarded to her."
+  },
+  {
+    "id": "eval-010",
+    "type": "verdict",
+    "question": "A consumer was reimbursed for an APP scam under the FPS Reimbursement Rules, but the bank deducted the £100 excess. The consumer accepts the deduction is permitted by the rules but argues it is still unfair. Under the rules, was the bank entitled to deduct the excess, and was doing so unfair?",
+    "expected_behaviour": "answer_with_citation",
+    "grounding": [
+      "DRN-5677203"
+    ],
+    "gold_answer": "The bank was entitled to deduct the excess. The FPS Reimbursement Rules permit a sending PSP to apply a single claim excess of up to £100 per claim at its discretion, unless the customer was a vulnerable consumer at the time of the payment (which was not argued or evidenced here). The ombudsman also found the deduction was not unfair: the rules are a compulsory additional protection, not an insurance contract, and applying them left the consumer better off than they would have been without the rules while placing part of the loss on the bank. Absent evidence the discretion was exercised in a discriminatory or unlawful way, the deduction was neither impermissible nor unfair.",
+    "system_response": "## Bank's Entitlement to Deduct the Excess\n\nBased on DRN-5677203, **yes, the bank was entitled to deduct the £100 excess**, and **no, doing so was not found to be unfair**.\n\n### Entitlement Under the Rules\n\nThe Ombudsman confirmed that the FPS Reimbursement Rules (issued by the PSR) explicitly permit sending PSPs to apply a single claim excess per APP scam claim, up to a maximum of £100. The PSR's rules state that sending PSPs may apply the maximum excess of £100, a lower excess, or no excess at all — it is a matter of the bank's **discretion**. The only exception is where the customer met the rules' definition of a **vulnerable customer** at the time of the payment, which was not applicable in this case.\n\nThe Ombudsman found no evidence that the bank had applied the deduction in a **discriminatory or otherwise unlawful way**, and therefore concluded Monzo was fully entitled to make the deduction.\n\n### Whether It Was Unfair\n\nDespite the consumer's argument that what is *permitted* and what is *fair* can be meaningfully distinct, the Ombudsman **did not find the deduction unfair**. The reasoning was:\n\n- Both the consumer and the bank suffered financial loss; neither was at fault.\n- The Reimbursement Rules had already shifted **part** of the burden from the consumer to the bank.\n- The £100 excess meant the loss was **shared** between both innocent parties, which the Ombudsman did not consider unfair.\n- The deduction left the consumer in a **better position** than he would have been without the Reimbursement Rules at all.\n\nThe Ombudsman concluded the bank's application of the rules was **not in breach of Treating Customers Fairly principles or the Consumer Duty**."
+  },
+  {
+    "id": "eval-011",
+    "type": "verdict",
+    "question": "A consumer bought a second-hand car from someone she knew, paid by transfer, received the car, but later found quality problems (mileage discrepancies, undisclosed damage). She says she was scammed and wants reimbursement under the FPS Reimbursement Rules. Should she be reimbursed?",
+    "expected_behaviour": "answer_with_citation",
+    "grounding": [
+      "DRN-6177338"
+    ],
+    "gold_answer": "No. The ombudsman found this was a private civil dispute, not an APP scam. The payment purposes were aligned: she intended to buy a specific car and the seller intended to sell it, ownership was genuinely transferred, and she received the car. She knew who she was paying. Her complaint concerns the quality of the car, which is a matter she may pursue with the seller directly, not a case where she was deceived about the recipient or the purpose of the payment. Private civil disputes are not covered by the rules.",
+    "system_response": "Based on decision DRN-6177338, **no, she should not be reimbursed** under the FPS Reimbursement Rules. The Ombudsman gave the following reasons:\n\n1. **The APP scam definition was not met.** The FPS Reimbursement Rules define an APP scam as requiring either that \"the recipient is not who the consumer intended to pay\" or that \"the payment is not for the purpose the consumer intended.\" Here, both parties' purposes were aligned — the seller's purpose was to sell the car and the consumer's was to buy it — so the payment purpose condition was not satisfied. The consumer also knew who she was paying.\n\n2. **Ownership was genuinely transferred.** The records supported that the car's ownership was genuinely transferred and the consumer received the car, undermining the argument that the payments were made for a fraudulent purpose.\n\n3. **Quality complaints are a civil matter, not an APP scam.** The Ombudsman found that issues arising from the *quality* of the car — such as mileage discrepancies and undisclosed prior damage — do not bring the transaction within the APP scam definition. This was characterised as a **private civil dispute**, which is not covered by the Rules.\n\n4. **Insufficient evidence of dishonest misrepresentation.** The evidence did not clearly establish what the seller told or showed the consumer prior to the sale, and no official mechanical report was provided.\n\nThe Ombudsman noted the consumer **may be able to pursue her grievances with the seller directly** through civil means."
+  },
+  {
+    "id": "eval-012",
+    "type": "verdict",
+    "question": "A company director was tricked by a caller impersonating his bank (a 'safe account' scam) and made a £23,500 Faster Payment. The bank refused reimbursement, arguing the Consumer Standard of Caution Exception applied because he ignored its warnings and a Confirmation of Payee mismatch with gross negligence. Under the FPS Reimbursement Rules, should the company be reimbursed?",
+    "expected_behaviour": "answer_with_citation",
+    "grounding": [
+      "DRN-5598937"
+    ],
+    "gold_answer": "Yes, subject to the excess. The ombudsman was not persuaded the customer acted with gross negligence, so the Consumer Standard of Caution Exception did not apply. Gross negligence is a higher bar than ordinary negligence, requiring a significant degree of carelessness, and it is for the bank to demonstrate it. Here the scam was sophisticated (number spoofing the bank's own number, the caller knowing personal details), the customer was under heavy social engineering, and the bank's interventions were generic rather than bespoke and specific to the payment. Moving past such warnings under that manipulation did not amount to gross negligence. The company should be reimbursed the £23,500 lost, minus the permitted excess of up to £100, plus 8% simple interest from the date the claim was declined to settlement.",
+    "system_response": "## Answer Based on DRN-5598937\n\nYes, M Ltd should be reimbursed, subject to a maximum excess of £100.\n\n### Key Findings from the Decision\n\n**The Reimbursement Rules Apply**\nThe Ombudsman confirmed all criteria for a covered payment were met: the payment occurred after 7 October 2024, was made via Faster Payments as part of an APP scam, was authorised by the account holder, and was sent to a UK account not under M Ltd's control.\n\n**The Consumer Standard of Caution Exception Was Not Established**\nZempler relied solely on the **Intervention Standard**, arguing Mr C ignored warnings and the CoP mismatch with gross negligence. The Ombudsman rejected this for several reasons:\n\n1. **Scam complexity**: The fraudsters used number spoofing, held personal information about Mr C and his business, and referenced a location he had recently visited — making the call credibly appear to be genuine.\n\n2. **Social engineering**: Mr C was under active, dynamic manipulation throughout, with fraudsters pre-empting each screen and providing reassurances in real time. The interventions were standard process warnings rather than payment-specific alerts.\n\n3. **Nature of interventions**: The warnings were not bespoke or transaction-specific, and none mentioned number spoofing — a key factor in Mr C's belief the call was genuine.\n\n4. **Gross negligence threshold not met**: The Ombudsman stated that *\"gross negligence requires a significant degree of carelessness. It's not enough for Zempler to show that a reasonable person in Mr C's shoes might have acted differently.\"* Zempler failed to demonstrate his conduct fell so far below that standard.\n\n5. **Retained scepticism**: Mr C did not abandon all caution — he grew suspicious when further payments were requested and sought his wife's advice, showing misplaced trust rather than careless indifference.\n\n### Remedy\nZempler was instructed to pay:\n- **£23,500 minus a maximum excess of £100**\n- **8% simple interest per annum** from the date Zempler declined the claim to settlement, less any lawfully deductible tax."
+  },
+  {
+    "id": "eval-013",
+    "type": "quantitative",
+    "question": "A company (W) lost £100,000 to an APP scam (an intercepted invoice email) via Faster Payments in November 2024. It wants the full amount reimbursed under the FPS / APP Scam Reimbursement rules. What is the maximum the bank is required to reimburse under those rules?",
+    "expected_behaviour": "answer_with_citation",
+    "grounding": [
+      "DRN-5875866"
+    ],
+    "gold_answer": "£85,000. Under the APP Scam Reimbursement rules a PSP is only responsible for reimbursing a maximum of £85,000 per claim. The bank reimbursed £85,000 under the rules, which the ombudsman found was a fair application of them; the sum above that cap is not something the rules required the bank to reimburse. (Separately, in this case the remaining £15,000 was ultimately recovered from the receiving bank, and interest and service compensation were awarded, but the rules' reimbursement obligation itself is capped at £85,000.)",
+    "system_response": "Based on DRN-5875866, the maximum amount that Barclays was required to reimburse under the APP Scam Reimbursement (ASR) rules is **£85,000 per claim**.\n\nThe decision quotes the PSR's confirmation that:\n\n> \"the maximum level that [firms] will have to reimburse victims of Faster Payments APP scams [is] £85,000 per claim\"\n\nAccordingly, although W lost £100,000 in total, Barclays' obligation under the ASR rules was capped at £85,000, which Barclays duly reimbursed. The ombudsman found that Barclays had \"fairly considered W's claim under these rules\" by doing so. The remaining £15,000 was ultimately returned to W separately through fund recovery efforts from the receiving bank, rather than through any additional reimbursement obligation on Barclays under the ASR rules."
+  },
+  {
+    "id": "eval-014",
+    "type": "verdict",
+    "question": "Under the FPS Reimbursement Rules, what are the requirements for an APP scam payment to be covered by the rules?",
+    "expected_behaviour": "answer_with_citation",
+    "grounding": [
+      "DRN-5598937"
+    ],
+    "gold_answer": "The payment must meet several criteria: it must have taken place on or after 7 October 2024; it must have been reported within 13 months after the date of the final covered payment of the scam claim; it must have been made as part of an APP scam (either to a recipient the payer did not intend, or for a purpose the payer did not intend); it must have been authorised by the account holder; and it must have been made to another UK account not under the consumer's control.",
+    "system_response": "Based on DRN-5598937, the decision sets out the following requirements for a payment to be covered by the FPS Reimbursement Rules:\n\n1. **Timing**: The payment must have taken place **after 7 October 2024** and have been reported within **13 months** after the date of the final covered payment of the scam claim.\n\n2. **Nature of payment**: It must have been made as part of an **APP scam** (whether to a recipient or for a purpose otherwise than the payer intended).\n\n3. **Authorisation**: It must have been **authorised by the account holder**.\n\n4. **Destination**: It must have been made to **another UK account that was not under the control of the consumer**.\n\nThe decision notes that there was no dispute that these criteria applied to the Faster Payment made by Mr C in this case."
+  },
+  {
+    "id": "eval-015",
+    "type": "verdict",
+    "question": "Under the FPS Reimbursement Rules, what is the effect of the customer being vulnerable at the time of the APP scam?",
+    "expected_behaviour": "answer_with_citation",
+    "grounding": [
+      "DRN-5598937"
+    ],
+    "gold_answer": "Where a customer was vulnerable to the particular APP scam, the firm cannot deduct the excess from the reimbursement. Otherwise, the rules allow a firm to deduct an excess from each APP scam claim, up to a maximum of £100. So vulnerability removes the firm's ability to apply that excess deduction.",
+    "system_response": "Based on DRN-5598937, the decision identifies two effects of vulnerability under the FPS Reimbursement Rules:\n\n1. **Applicability of the Consumer Standard of Caution Exception**: If a consumer was vulnerable at the time the payment was made, the Exception cannot be used to deny reimbursement. The decision states that for a payment to be reimbursable, \"The Exception does not apply **or** the consumer was a vulnerable consumer at the time the payment was made.\"\n\n2. **The excess deduction**: The maximum £100 excess that a firm is permitted to deduct from a reimbursement claim cannot be applied where \"a customer was vulnerable to a particular APP scam.\"\n\nThe decision also notes, in the context of this specific case, that because the complainant is a limited company rather than a natural person, it **cannot** be considered a vulnerable consumer, so these protections were not available to M Ltd in this instance."
+  },
+  {
+    "id": "eval-016",
+    "type": "abstention",
+    "question": "In the Santander job scam case, how much was the consumer reimbursed for the £2,180 of card payments under the FPS Reimbursement Rules, after the £100 excess was applied?",
+    "expected_behaviour": "abstain",
+    "grounding": [
+      "DRN-5911048"
+    ],
+    "gold_answer": "The FPS Reimbursement Rules do not apply to those payments, so no reimbursement figure under the rules can be given. The £2,180 was made by card payments and to an account under the consumer's own control (her account with 'R'); the rules cover neither card payments nor payments to an account controlled by the consumer, and either of those reasons alone puts the payments outside the rules. The premise that an excess was applied to them is therefore mistaken, and no reimbursable amount under the rules arises.",
+    "system_response": "Based on the decision in DRN-5911048, the £2,180 in card payments made by Miss S to her own account with 'R' were **not covered by the FPS Reimbursement Rules at all**, as the Rules do not apply to card payments or payments made to an account under the consumer's own control. Therefore, no reimbursement was considered under the Rules for those payments, and the question of applying the £100 excess to them does not arise.\n\nThe decision ultimately did not uphold the complaint, meaning Miss S received no reimbursement from Santander for any of her losses."
+  },
+  {
+    "id": "eval-017",
+    "type": "verdict",
+    "question": "In the Santander job scam case, the consumer said she was vulnerable at the time and that the bank should not have applied the £100 excess. Under the FPS Reimbursement Rules, did her vulnerability prevent the bank from applying the excess?",
+    "expected_behaviour": "answer_with_citation",
+    "grounding": [
+      "DRN-5911048"
+    ],
+    "gold_answer": "No. The ombudsman accepted the consumer was vulnerable at the time of the scam and was under stress and financial pressure (health worries, financial pressure), but did not think her vulnerabilities necessarily made her more susceptible to the scam she fell victim to, or that she was unable to take steps to protect herself. The messages showed she repeatedly doubted the 'job', questioned its legitimacy and asked for her money back, so she was able to question the offer and could have taken further steps to verify it. On that basis the ombudsman was satisfied it was fair for Santander to apply the excess and did not find the deduction unfair under the Reimbursement Rules.",
+    "system_response": "No, Miss S's vulnerability did not prevent Santander from applying the £100 excess in this case.\n\nThe Ombudsman in DRN-5911048 acknowledged that **the excess cannot be applied if the victim was a Vulnerable Consumer at the time of the payments and if that vulnerability affected their ability to protect themselves from the scam**. This reflects Santander's own published policy, which states: *\"If something prevents you from being able to protect yourself while making a payment, we won't apply the excess.\"*\n\nWhile the Ombudsman accepted that Miss S was genuinely having a difficult time — including financial pressure, housing problems (mould and a sewage flood), and a health scare — the Ombudsman concluded that **her vulnerabilities did not necessarily make her more susceptible to the scam, nor did they prevent her from taking steps to protect herself**. The reasoning was that:\n\n- Miss S had **repeatedly questioned the legitimacy of the job** and asked for her money back during the scam, demonstrating she was capable of critical thinking;\n- Despite being reassured by likely stooges in the group chat, she **soon realised she was being tricked**;\n- She could have taken **further steps to verify** the opportunity, such as conducting research outside the chats.\n\nTherefore, the Ombudsman was satisfied it was **fair for Santander to apply the £100 excess**, as the key link — that her vulnerability *affected her ability to protect herself* — was not established on the facts."
+  }
+]
