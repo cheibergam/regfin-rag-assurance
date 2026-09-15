@@ -1,4 +1,4 @@
-# Results — v0 baseline measurement
+# Results - v0 baseline measurement
 
 ## What was measured
 
@@ -47,7 +47,7 @@ on the abstention behaviour where RAG systems most often fail. In other words,
 on this evidence the fidelity risk in compliance RAG appears to sit in
 **retrieval**, not in generation.
 
-The v0 measures the ceiling — the best case. The interesting and unanswered
+The v0 measures the ceiling - the best case. The interesting and unanswered
 question is what happens when retrieval is realistic: when the system must find
 the right decision among many and sometimes retrieves the wrong one, or an
 incomplete one. That is where citation hallucination and unwarranted answers are
