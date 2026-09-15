@@ -24,7 +24,7 @@ The baseline produced a **faithful response on all 15 items**, including:
   false-premise questions asking for a reimbursement figure in cases where no
   reimbursement was due), the system declined rather than fabricating an answer.
 - **3 of 3 quantitative items.** The system preserved the regulatory arithmetic
-  in each case — proportionate apportionment of credits and the £100 excess
+  in each case - proportionate apportionment of credits and the £100 excess
   (£32.97), the loss net of a part-repayment plus the excess and 8% interest
   (£8,000), and the £85,000 per-claim cap.
 - **9 of 9 verdict items.** The system reached the correct outcome with faithful
@@ -42,7 +42,7 @@ regime, APP scam reimbursement), the set was small (15 items), and one model was
 tested.
 
 **What it does suggest** is that, given the correct source document and a prompt
-that explicitly permits abstention, the generation step was faithful — including
+that explicitly permits abstention, the generation step was faithful - including
 on the abstention behaviour where RAG systems most often fail. In other words,
 on this evidence the fidelity risk in compliance RAG appears to sit in
 **retrieval**, not in generation.
